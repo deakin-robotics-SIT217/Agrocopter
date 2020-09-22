@@ -1,7 +1,6 @@
-#VRML_SIM R2020b utf8
+#VRML_SIM R2020a utf8
 WorldInfo {
   basicTimeStep 16
-  coordinateSystem "NUE"
   contactProperties [
     ContactProperties {
       material2 "Ball"
@@ -13,8 +12,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.30874451985159174 -0.9456014875288743 -0.10254095886420467 5.67320066651029
-  position 11.657784530981893 11.43660023270786 39.832406727117615
+  orientation 0.35595130277623205 -0.9311260537212451 -0.07939107086696935 5.909103686970653
+  position 3.9679790183028745 9.149913662121715 43.973366794343505
 }
 TexturedBackground {
 }
@@ -251,4 +250,35 @@ Pine {
   translation -23.71 0 22.31
   name "pine tree(2)"
 }
-
+PalmTree {
+  translation -30.25 0 0.49
+}
+PalmTree {
+  translation -23.07 0 7.62
+  name "palm tree(1)"
+}
+PalmTree {
+  translation -15.37 0 12.89
+  name "palm tree(2)"
+}
+SimpleTree {
+  translation -35 0 10
+}
+Windmill {
+  translation -6.75 0 -32.5
+  rotation 0 1 0 3.14159
+}
+SimpleTwoFloorsHouse {
+  translation -26.17 0 -21.89
+  rotation 0 1 0 1.5708
+}
+Tractor {
+  translation -17.83 0.75704 -10.27
+  rotation 0.03996673987330912 0.9951462829428089 -0.08992516471494552 1.5878353071795859
+}
+Rock17cm {
+  translation -16.27 0.09 -8.22
+}
+Apple {
+  translation -14.6 5.38 21.32
+}
