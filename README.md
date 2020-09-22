@@ -1,2 +1,2 @@
 # Agrocopter
-![Agrocopter](Media/farm.png)
+![Agrocopter](Media/Farm.png)
