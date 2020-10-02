@@ -12,8 +12,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.35595130277623205 -0.9311260537212451 -0.07939107086696935 5.909103686970653
-  position 3.9679790183028745 9.149913662121715 43.973366794343505
+  orientation 0.23584762520796448 -0.9413747160331616 -0.2412250851326368 4.6550748461176195
+  position 6.387210418043347 12.219688129917255 16.881513713753698
 }
 TexturedBackground {
 }
@@ -59,10 +59,12 @@ DEF INFECTED_CROP Solid {
   name "solid(2)"
 }
 Mavic2Pro {
-  translation -4.91003 1.79 15.04
+  translation -7 6 19
   rotation 0 -0.7071067811865475 -0.7071067811865475 -3.14159
+  controller "drone"
   cameraSlot [
     Camera {
+      rotation 1 0 0 1.57
       width 400
       height 240
       near 0.2
