@@ -7,6 +7,9 @@ from controller import InertialUnit
 from controller import Gyro
 from controller import Motor
 from controller import GPS
+from controller import Camera
+from controller import CameraRecognitionObject
+
 import math
 
 #Function definitions
@@ -18,6 +21,8 @@ agro_drone = Robot()
 
 # get the time step of the current world.
 timestep = int(agro_drone.getBasicTimeStep())
+
+camera = agro_drone.getCamera("camera")
 
 # Initialise devices
 imu = agro_drone.getInertialUnit('inertial unit')
@@ -39,13 +44,13 @@ for motor in motors:
     motor.setVelocity(1.0)
 
 # Balance variables
-k_vertical_thrust = 68.5;  # with this thrust, the drone lifts.
-k_vertical_offset = 0.6;   # Vertical offset where the robot actually targets to stabilize itself.
+k_vertical_thrust = 100.5;  # with this thrust, the drone lifts.
+k_vertical_offset = 11;   # Vertical offset where the robot actually targets to stabilize itself.
 k_vertical_p = 3.0;        # P constant of the vertical PID.
 k_roll_p = 50.0;           # P constant of the roll PID.
 k_pitch_p = 30.0;          # P constant of the pitch PID.
 
-target_altitude = 1.0
+target_altitude = 13.0
 
 # Main loop:
 while agro_drone.step(timestep) != -1:
@@ -72,13 +77,20 @@ while agro_drone.step(timestep) != -1:
     altitude = 70.0
 
     pitch_disturbance = -2.0
+    
+    objects = camera.getRecognitionObjects()
+    
+    if(objects[0].colors != (0.305882,0.603922,0.0235294)
+    {
+        print(str(gps_values[0])+","+str(gps_values[1])+","+str(gps_values[2]))
+    }
     if(gps_values[0]< -32):
     
         front_left_motor_input = 0
         front_right_motor_input = 0
         rear_left_motor_input = 0
         rear_right_motor_input = 0
-        print(str(gps_values[0])+","+str(gps_values[1])+","+str(gps_values[2]))
+       
         yaw_disturbance = 20
 
     if(gps_values[0] >-7):

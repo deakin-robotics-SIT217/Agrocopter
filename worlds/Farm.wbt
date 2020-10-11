@@ -1,7 +1,6 @@
-#VRML_SIM R2020b utf8
+#VRML_SIM R2020a utf8
 WorldInfo {
   basicTimeStep 16
-  coordinateSystem "NUE"
   contactProperties [
     ContactProperties {
       material2 "Ball"
@@ -13,8 +12,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.5115022911371184 -0.8361457541207037 -0.19805475007532192 5.44767995510345
-  position 136.15657000467948 58.76794595472414 93.92096424303504
+  orientation 0.34449556130663833 -0.738042341358887 -0.5801864446895638 3.9781516866120423
+  position 40.39614257266034 120.94550382491633 -40.11184635771586
 }
 TexturedBackground {
 }
