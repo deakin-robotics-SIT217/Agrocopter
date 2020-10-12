@@ -80,7 +80,7 @@ while agro_drone.step(timestep) != -1:
     
     objects = camera.getRecognitionObjects()
     
-    if(objects.colors != (0.305882,0.603922,0.0235294)):
+    if(objects[0].colors != (0.305882,0.603922,0.0235294)):
     
         print(str(gps_values[0])+","+str(gps_values[1])+","+str(gps_values[2]))
     
