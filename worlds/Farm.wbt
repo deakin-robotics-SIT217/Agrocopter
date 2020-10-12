@@ -1,6 +1,7 @@
-#VRML_SIM R2020a utf8
+#VRML_SIM R2020b utf8
 WorldInfo {
   basicTimeStep 16
+  coordinateSystem "NUE"
   contactProperties [
     ContactProperties {
       material2 "Ball"
@@ -12,8 +13,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.34449556130663833 -0.738042341358887 -0.5801864446895638 3.9781516866120423
-  position 40.39614257266034 120.94550382491633 -40.11184635771586
+  orientation -0.5162128526416788 0.8382216021025868 0.17580909116457324 1.2096482115150402
+  position 72.31072489761551 46.64651467036173 3.4344707155691925
 }
 TexturedBackground {
 }
@@ -167,6 +168,7 @@ GenericTrafficLight {
   rotation 0 1 0 1.5708
   greenTime 30
   redTime 10
+  state "green"
 }
 SpeedLimitSign {
   translation -57.1014 0 -63.7967
@@ -534,4 +536,17 @@ OldBench {
   translation -8.25 0 -28.57
   rotation 0 1 0 -1.5707953071795862
   name "old bench(1)"
+}
+OilBarrel {
+  translation -12 0.4 -28
+}
+Pedestrian {
+  translation 0 1.27 -31
+}
+Pedestrian {
+  translation 7 1.27 -41
+  name "pedestrian(1)"
+}
+Gnome {
+  translation 16 0 -19
 }
